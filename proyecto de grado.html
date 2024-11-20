@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sistema de Inyección de Motor Lineal - Proyecto de Grado</title>
+    <style>
+        /* Reset de márgenes y padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+
+        header .container {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #ffcc00;
+        }
+
+        .section {
+            padding: 60px 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        p, ul {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .tech-list {
+            display: flex;
+            gap: 20px;
+        }
+
+        .tech-item {
+            flex: 1;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ffcc00;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+        }
+
+        form textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        form button {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Sistema de Inyección de Motor Lineal</h1>
+            <nav>
+                <ul>
+                    <li><a href="#introduccion">Introducción</a></li>
+                    <li><a href="#tecnologias">Tecnologías</a></li>
+                    <li><a href="#funcionalidades">Funcionalidades</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Introducción -->
+    <section id="introduccion" class="section">
+        <div class="container">
+            <h2>Introducción</h2>
+            <p>Este proyecto presenta el diseño y desarrollo de un sistema de inyección para motores lineales, con el objetivo de optimizar el rendimiento y la eficiencia energética del motor...</p>
+        </div>
+    </section>
+
+    <!-- Sección Tecnologías -->
+    <section id="tecnologias" class="section">
+        <div class="container">
+            <h2>Tecnologías Utilizadas</h2>
+            <div class="tech-list">
+                <div class="tech-item">
+                    <h3>Microcontroladores</h3>
+                    <p>El sistema utiliza microcontroladores de última generación para gestionar la inyección de combustible...</p>
+                </div>
+                <div class="tech-item">
+                    <h3>Sensores de Presión</h3>
+                    <p>Se utilizan sensores de alta precisión para monitorear la presión y la temperatura dentro del motor...</p>
+                </div>
+                <div class="tech-item">
+                    <h3>Algoritmos de Optimización</h3>
+                    <p>Se implementan algoritmos avanzados para garantizar la inyección de combustible eficiente y controlada...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Funcionalidades -->
+    <section id="funcionalidades" class="section">
+        <div class="container">
+            <h2>Funcionalidades</h2>
+            <p>El sistema permite una variedad de características clave, tales como:</p>
+            <ul>
+                <li>Control en tiempo real de la inyección de combustible.</li>
+                <li>Optimización del consumo de combustible.</li>
+                <li>Diagnóstico de rendimiento del motor.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2>Contacto</h2>
+            <form id="contactForm">
+                <input type="text" placeholder="Nombre" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <textarea placeholder="Tu mensaje..." required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Proyecto de Grado - Sistema de Inyección de Motor Lineal</p>
+        </div>
+    </footer>
+
+    <script>
+        // script.js
+
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Evitar el envío real del formulario
+            alert("¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.");
+            document.getElementById("contactForm").reset(); // Limpiar el formulario
+        });
+    </script>
+</body>
+</html>
